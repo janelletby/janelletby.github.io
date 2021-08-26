@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+@import "styles.css"
+</style>
+
+<title>Children's Cancer Foundation | Singapore</title>
+
+</head>
+
+<body>
+
+<div class="topnav">
+  <a href="#General-information">General information</a>
+  <a href="#Performance">Performance Lineup</a>
+  <a href="#Sign">Sign Up</a>
+  <a href="#Donations">Donate</a>
+  <a href="#Contact">Contact</a>
+</div>
+
+ <img src="banner.png" width="100%" height="auto">
+
+<div class="General-information" id="General-information">
+   <h1 class="heading"> General information </h1>
+  <p class="normal"> SingFest is a concert which will span over a few days in September, in commemoration of Childhood Cancer Awareness Month. 100% of the gross donations will be donated to CCF. A small amount will go a long way in helping the kids. </p>
+
+<img src="photo.jpeg" class="center" width="100%" height="auto">
+
+</div>
+
+<HR WIDTH="65%" COLOR="#fadf85" SIZE="5">
+
+<div class="Performance" id="Performance">
+   <h1 class="heading2" align="middle"> Performance Lineup </h1>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="ben.jpeg" width="100%">
+    <div class="text">7pm-8pm: Benjamin Kheng</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="narelle.jpeg" width="100%">
+    <div class="text">8pm-9pm: Narelle Kheng</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="haneri.jpeg" width="100%">
+    <div class="text">9pm-10pm: Haneri</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</div>
+
+<div class="Sign" id="Sign">
+   <a href="https://www.ccf.org.sg/support-us/volunteer/">
+      <img src="signuphere.jpeg" class="center" width="50%" height="auto">
+   </a>
+</div>
+
+<HR WIDTH="65%" COLOR="#fadf85" SIZE="5">
+
+<div class="Donations" id="Donations">
+   <img src="reached.gif" class="center2" width="65%" height="auto">
+   <a href="https://www.ccf.org.sg/donate/start.php"> 
+  <img src="donate.jpeg" class="center" width="50%" height="auto">
+</a>
+
+<h2 class="heading3" align="middle"> Messages from donors </h2>
+
+<table class="center3">
+   <tr> 
+      <td> <b> Chee Leong ($210) </b> <br> Please don't give up any hope!! We are behind you... Patrick Toh </td> 
+   </tr>
+   <tr> 
+      <td> <b> Kwek Voon ($20) </b> <br> Smile. We love you. </td> 
+   </tr>
+   <tr> 
+      <td> <b> Zhanke ($100) </b> <br> Love is sent to all </td> 
+   </tr>
+   <tr> 
+      <td> <b> Alicia ($100) </b> <br> Love. Hope. Dream. </td> 
+   </tr>
+   <tr> 
+      <td> <b> Goh Yeow Hua ($200) </b> <br> God blessings upon you </td> 
+   </tr>
+   <tr> 
+      <td> <b> Zi Xuan ($100) </b> <br> Fight on for this beautiful world and your loved ones. </td> 
+   </tr>
+   <tr> 
+      <td> <b> Tze Kiat ($20) </b> <br> Donate on behalf of my son Ong Tze Kiat His little contribution hope can be of help..never give up!! </td> 
+   </tr>
+   <tr> 
+      <td> <b> Anonymous ($88) </b> <br> Hi! Stay strong as always little heroes! Never give up! Blessings to you all. </td> 
+   </tr>
+   <tr> 
+      <td> <b> Anonymous ($50) </b> <br> Never give up! </td> 
+   </tr>
+   <tr> 
+      <td> <b> Anonymous ($200) </b> <br> Best wishes to everyone!! </td> 
+   </tr>
+</table>
+</div>
+
+<HR WIDTH="65%" COLOR="#fadf85" SIZE="5">
+
+<div class="Contact" id="Contact">
+   <h1 class="heading"> Contact </h1>
+   <p class="normal"> Should you have further queries, please contact the Community Engagement & Partnerships Team at 6677 7788, or email to ccfadmin@ccf.org.sg. We look forward to hearing from you shortly. Your act of kindness will certainly put smiles in the hearts of children again. </p>
+</div>
+
+ <a href="https://www.ccf.org.sg/donate/start.php"> 
+ <img src="bb5.png" width="100%" height="auto">
+</a>
+
+</body>
+
+</html>
